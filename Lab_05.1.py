@@ -1,13 +1,26 @@
 # LAB 5.1
-# Probability of drawing exactly r cards
-# from a specific suit
+# Probability of Drawing Cards from Same Suit
 
+# Problem Statement:
+
+# A standard deck contains 52 playing cards.
+# A suit contains 13 cards
+# (Example: Hearts, Spades, Clubs, Diamonds).
+# You randomly draw k cards from the deck
+# without replacement.
+# Find the probability of drawing exactly
+# r cards from a specific suit.
+#
 # Formula:
-
+#
 #  C(s,r) * C(52-s,k-r)
 # ----------------------
 #         C(52,k)
-
+# where:
+#
+# s = number of cards in one suit
+# k = total cards drawn
+# r = cards from same suit
 
 import math
 
