@@ -15,19 +15,20 @@
 # - Print the final result
 
 
-a = int(input("Enter base value: "))
-m = int(input("Enter power value: "))
-p = int(input("Enter modulo value: "))
+
+
+a =int(input("enter a value: "))
+m = int(input("enter power value: "))
+p = int(input("enter mod value: "))
 
 result = 1
-a = a % p
-
+a=a % p
 while m > 0:
-
-    if m % 2 == 1:
+    if m % 2 == 1: #check it m i s odd
         result = (result * a) % p
 
     a = (a * a) % p
     m = m // 2
 
-print("Final Modulo =", result)
+print(result)
+

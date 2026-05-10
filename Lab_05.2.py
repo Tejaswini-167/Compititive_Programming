@@ -24,25 +24,22 @@
 # k = selected items
 # r = defective items selected
 
-import math
+def ncr(n, r):
+    if r > n:
+        return 0
+    result = 1
 
+    for i in range(r):
+        result = result * (n - i)
+        result = result // (i + 1)
 
-def comb(n, r):
+    return result
 
-    return math.factorial(n) // (
-        math.factorial(r) * math.factorial(n - r)
-    )
-
-
-n, d, k, r = map(int, input().split())
-
-favorable = comb(d, r) * comb(n - d, k - r)
-
-total = comb(n, k)
-
+N, D, K, R = map(int, input().split())
+favorable = ncr(D, R) * ncr(N - D, K - R)
+total = ncr(N, K)
 probability = favorable / total
-
-print(round(probability, 6))
+print(f"{probability:.6f}")
 
 
 # Input:

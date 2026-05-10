@@ -20,13 +20,16 @@ n, k = map(int, input().split())
 
 result = 1
 
-for i in range(k):
+if k > n:
+    print(0)
 
-    result = result * (n - i)
-    result = result // (i + 1)
+else:
+    for i in range(k):
 
-print(result)
+        result = result * (n - i)
+        result = result // (i + 1)
 
+    print(result)
 
 # Input:
 # 5 2

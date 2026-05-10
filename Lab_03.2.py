@@ -18,7 +18,7 @@
 
 a, b, p, k = map(int, input().split())
 
-mod_product = (a * b) % p
+mod_product = ((a % p) * (b % p)) % p
 
 if mod_product % k == 0:
     print("Divisible")

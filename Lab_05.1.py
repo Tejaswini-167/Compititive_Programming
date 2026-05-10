@@ -10,47 +10,21 @@
 # without replacement.
 # Find the probability of drawing exactly
 # r cards from a specific suit.
-#
-# Formula:
-#
-#  C(s,r) * C(52-s,k-r)
-# ----------------------
-#         C(52,k)
-# where:
-#
-# s = number of cards in one suit
-# k = total cards drawn
-# r = cards from same suit
-
-import math
-
-s = int(input("Enter cards in one suit: "))
-k = int(input("Enter number of cards drawn: "))
-r = int(input("Enter same suit cards: "))
 
 
 def ncr(n, r):
+    result = 1
 
-    return math.factorial(n) // (
-        math.factorial(r) * math.factorial(n - r)
-    )
+    for i in range(r):
+        result = result * (n - i)
+        result = result // (i + 1)
 
+    return result
 
-total_cards = 52
+k, r = map(int, input().split())
 
-favorable = ncr(s, r) * ncr(total_cards - s, k - r)
-
-total = ncr(total_cards, k)
-
+favorable = ncr(13, r) * ncr(39, k - r)
+total = ncr(52, k)
 probability = favorable / total
-
 print(probability)
 
-
-# Input:
-# 13
-# 5
-# 2
-
-# Output:
-# 0.274279...

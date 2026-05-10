@@ -17,13 +17,27 @@
 
 # LAB 2.1 - Sum of Large Numbers Modulo
 
-n = int(input("Enter the number of items: "))
-m = int(input("Enter the modulo value: "))
+# n = int(input("Enter the number of items: "))
+# m = int(input("Enter the modulo value: "))
+
+# total = 0
+
+# for i in range(n):
+#     num = int(input("Enter value: "))
+#     total = (total + num)
+#     modulo = total % m
+
+# print("Modulo =", modulo)
+
+
+
+n = int(input())
+m = int(input())
 
 total = 0
 
 for i in range(n):
-    num = int(input("Enter value: "))
+    num = int(input())
     total = (total + num) % m
 
-print("Modulo =", total)
+print(total)

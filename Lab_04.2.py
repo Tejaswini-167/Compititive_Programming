@@ -14,21 +14,18 @@
 
 # Calculate the total number of possible hands.
 
-n = int(input("Enter n value: "))
-k = int(input("Enter k value: "))
+def factorial(n):
 
+    fact = 1
 
-def fact(x):
+    for i in range(1, n + 1):
+        fact = fact * i
 
-    result = 1
+    return fact
 
-    for i in range(1, x + 1):
-        result = result * i
-
-    return result
-r = n - k
-ans = fact(n) // (fact(k) * fact(r))
-print(ans)
+N, K = map(int, input().split())
+result = factorial(N) // (factorial(K) * factorial(N - K))
+print(result)
 
 
 # Input:
