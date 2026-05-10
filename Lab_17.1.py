@@ -32,53 +32,39 @@ n, e = map(int, input().split())
 graph = [[] for i in range(n)]
 
 for i in range(e):
-
     u, v = map(int, input().split())
-
     graph[u].append(v)
     graph[v].append(u)
 
 start = int(input())
 
-# BFS
-
 visited = [False] * n
-
-queue = deque([start])
-
+q = deque([start])
 visited[start] = True
 
-print("BFS:", end=" ")
+print("BFS Traversal:", end=" ")
 
-while queue:
-
-    node = queue.popleft()
-
+while q:
+    node = q.popleft()
     print(node, end=" ")
 
-    for i in graph[node]:
-
-        if not visited[i]:
-
-            visited[i] = True
-
-            queue.append(i)
-
-# DFS
+    for x in graph[node]:
+        if not visited[x]:
+            visited[x] = True
+            q.append(x)
 
 visited = [False] * n
+stack = [start]
 
-def dfs(node):
+print("\nDFS Traversal:", end=" ")
 
-    visited[node] = True
+while stack:
+    node = stack.pop()
 
-    print(node, end=" ")
+    if not visited[node]:
+        visited[node] = True
+        print(node, end=" ")
 
-    for i in graph[node]:
-
-        if not visited[i]:
-            dfs(i)
-
-print("\nDFS:", end=" ")
-
-dfs(start)
+        for x in reversed(graph[node]):
+            if not visited[x]:
+                stack.append(x)

@@ -15,7 +15,6 @@ for i in range(n):
             min = j
     arr[i], arr[min] = arr[min], arr[i]
 
-
 for i in arr:
     print(i, end=" ")
 

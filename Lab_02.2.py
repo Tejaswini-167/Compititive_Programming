@@ -4,7 +4,6 @@
 # Given three integers a, m, and p, calculate:
 
 #       (a ^ m) % p
-
 # Important:
 # Directly calculating a^m can create a very large number.
 # So, modular exponentiation is used to avoid overflow.
@@ -13,8 +12,6 @@
 # - Accept a, m, and p as input
 # - Calculate (a^m) % p efficiently
 # - Print the final result
-
-
 
 
 a =int(input("enter a value: "))

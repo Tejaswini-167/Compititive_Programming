@@ -26,5 +26,5 @@ k, r = map(int, input().split())
 favorable = ncr(13, r) * ncr(39, k - r)
 total = ncr(52, k)
 probability = favorable / total
-print(probability)
+print(f"{probability:.6f}")
 
