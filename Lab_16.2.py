@@ -7,17 +7,6 @@
 # N
 # bid values
 
-# Example:
-
-# 7
-# 1500 3200 2800 5000 4100 2600 4800
-# Output Format
-# highest bid
-
-# Example:
-
-# 5000
-# Simplest Heap Version
 import heapq
 
 n = int(input())

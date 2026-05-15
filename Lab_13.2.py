@@ -7,23 +7,7 @@
 
 # and prints the maximum time required for all cars to pass the checkpoint.
 
-# Input Format
-# N
-# lengths
-# speeds
 
-# Example:
-
-# 4
-# 4 2 6 3
-# 2 3 1 2
-# Output Format
-# maximum time
-
-# Example:
-
-# 6
-# Simplest Code
 
 n = int(input())
 

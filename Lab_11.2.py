@@ -4,20 +4,7 @@
 # This program stores product prices and quantities, then calculates the total bill
 #  by multiplying each price with its quantity and adding all costs.
 
-# Input Format
-# N
-# prices
-# quantities
 
-# Example:
-# 4
-# 100 50 20 10
-# 2 5 3 4
-
-# Output Format
-
-# 550
-# Simplest Code
 n = int(input())
 
 prices = list(map(int, input().split()))

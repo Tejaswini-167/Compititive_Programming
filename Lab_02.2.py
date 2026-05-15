@@ -8,15 +8,8 @@
 # Directly calculating a^m can create a very large number.
 # So, modular exponentiation is used to avoid overflow.
 
-# Task:
-# - Accept a, m, and p as input
-# - Calculate (a^m) % p efficiently
-# - Print the final result
 
-
-a =int(input("enter a value: "))
-m = int(input("enter power value: "))
-p = int(input("enter mod value: "))
+a,m,p =map(int,input().split())
 
 result = 1
 a=a % p

@@ -1,18 +1,18 @@
-# n = int(input())
-# table = set()
+n = int(input())
+table = set()
 
-# for i in range(n):
-#     table.add(input())
+for i in range(n):
+    table.add(input())
 
-# q = int(input())
+q = int(input())
 
-# for i in range(q):
-#     s = input()
+for i in range(q):
+    s = input()
 
-#     if s in table:
-#         print("Found")
-#     else:
-#         print("Not Found")
+    if s in table:
+        print("Found")
+    else:
+        print("Not Found")
 
 
 

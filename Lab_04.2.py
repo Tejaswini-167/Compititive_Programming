@@ -7,12 +7,10 @@
 # The order of cards does not matter.
 
 # Formula:
-
 #            N!
 #   nCk = ---------
 #         K!(N-K)!
 
-# Calculate the total number of possible hands.
 
 def factorial(n):
 

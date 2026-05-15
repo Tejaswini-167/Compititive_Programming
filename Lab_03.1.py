@@ -9,23 +9,23 @@
 # for all pairs and find their sum modulo p.
 
 
-# n, p = map(int, input().split())
-# total = 0
-# for i in range(n):
+n, p = map(int, input().split())
+total = 0
+for i in range(n):
 
-#     a, m = map(int, input().split())
-#     result = 1
-#     a = a % p
+    a, m = map(int, input().split())
+    result = 1
+    a = a % p
 
-#     while m > 0:
-#         if m % 2 == 1:
-#             result = (result * a) % p
+    while m > 0:
+        if m % 2 == 1:
+            result = (result * a) % p
 
-#         a = (a * a) % p
-#         m = m // 2
+        a = (a * a) % p
+        m = m // 2
 
-#     total = (total + result) % p
-# print(total)
+    total = (total + result) % p
+print(total)
 
 
 # Sample Input:
@@ -39,14 +39,14 @@
 
 
 
-n, p = map(int, input().split())
+# n, p = map(int, input().split())
 
-total = 0
+# total = 0
 
-for _ in range(n):
-    a, m = map(int, input().split())
-    total = total + (a**m)%p
+# for _ in range(n):
+#     a, m = map(int, input().split())
+#     total = total + (a**m)%p
     
-S = total % p
+# S = total % p
 
-print(S)
+# print(S)

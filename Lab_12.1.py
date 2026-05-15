@@ -7,17 +7,7 @@
 # N
 # array elements
 
-# Example:
 
-# 5
-# 120 250 99 180 75
-# Output Format
-# minimum element
-
-# Example:
-
-# 75
-# Simplest Code
 n = int(input())
 
 arr = list(map(int, input().split()))

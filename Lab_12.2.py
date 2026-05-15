@@ -6,25 +6,9 @@
 
 # Time = Distance / Speed
 
-# Input Format
-# N
-# car speeds
-# distance
 
-# Example:
 
-# 5
-# 60 45 80 50 40
-# 10
-# Output Format
-# Minimum Speed
-# Maximum Time
 
-# Example:
-
-# Minimum Speed = 40
-# Maximum Time = 0.25 hours
-# Simplest Code
 
 n = int(input())
 

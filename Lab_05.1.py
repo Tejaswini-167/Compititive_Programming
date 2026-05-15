@@ -1,6 +1,4 @@
-# LAB 5.1
-# Probability of Drawing Cards from Same Suit
-
+# LAB 5.1  : Probability of Drawing Cards from Same Suit
 # Problem Statement:
 
 # A standard deck contains 52 playing cards.

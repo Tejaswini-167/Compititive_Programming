@@ -10,11 +10,6 @@
 # 3. If amount >= 5000 and < 10000 -> 20% discount
 # 4. If amount >= 10000 -> 25% discount + 500 flat discount
 
-# Task:
-# - Accept total purchase amount as input
-# - Apply the correct discount using conditional statements
-# - Display the final payable amount
-
 
 
 amount = int(input("Enter total purchase amount: "))

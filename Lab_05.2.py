@@ -1,5 +1,4 @@
-# LAB 5.2
-# Quality Inspection Probability
+# LAB 5.2 Quality Inspection Probability
 
 # Problem Statement:
 
@@ -8,21 +7,8 @@
 # From these n items, k items are selected randomly
 # for inspection.
 
-# Find the probability that exactly r defective
-# items are selected.
-
-# Formula:
-#
-#  C(d,r) * C(n-d,k-r)
-# ---------------------
-#        C(n,k)
-#
 # where:
-#
-# n = total items
-# d = defective items
-# k = selected items
-# r = defective items selected
+# n = total items, d = defective items , k = selected items, r = defective items selected
 
 def ncr(n, r):
     if r > n:

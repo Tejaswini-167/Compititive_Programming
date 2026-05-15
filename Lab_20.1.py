@@ -1,7 +1,9 @@
 # Lab 20.1 — Preorder Tree Traversal
 # PS Description
 
-# This program stores a binary tree and prints all nodes using preorder traversal.
+# This code is using Tree Traversal (Preorder Traversal) to print all files and directories in a file system structure.
+
+# Think of it like this:
 
 n = int(input())
 

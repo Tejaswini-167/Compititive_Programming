@@ -7,18 +7,6 @@
 # N
 # distances
 
-# Example:
-
-# 6
-# 2 5 8 12 15 20
-# Output Format
-
-# Print cars alternately from left and right.
-
-# Example:
-
-# 2 20 5 15 8 12
-# Simplest Code
 
 n = int(input())
 

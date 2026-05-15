@@ -7,21 +7,7 @@
 # text
 # pattern
 
-# Example:
 
-# ABABABC
-# ABABC
-# Output Format
-# Pattern Found
-
-# or
-
-# Pattern Not Found
-
-# Example:
-
-# Pattern Found
-# Simplest Code
 
 text = input()
 

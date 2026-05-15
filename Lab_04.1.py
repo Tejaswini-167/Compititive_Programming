@@ -7,13 +7,9 @@
 # The order of selection does not matter.
 
 # Formula:
-
 #            n!
 #   nCk = ---------
 #         k!(n-k)!
-
-# Calculate the total number of distinct
-# teams that can be formed.
 
 
 n, k = map(int, input().split())

@@ -4,8 +4,6 @@
 # An online store provides item-level and order-level
 # discounts on purchases.
 
-# Discount Rules:
-
 # Item-Level Discount:
 # - Each item may have its own percentage discount.
 # - Discount is applied individually to every item.
@@ -14,15 +12,6 @@
 # - After calculating subtotal:
 #     * If subtotal > 500  -> 10% discount
 #     * If subtotal > 1000 -> 150 fixed discount
-#
-# - Apply only the discount that gives maximum savings.
-
-# Task:
-# - Accept number of items
-# - Accept item price and discount percentage
-# - Calculate subtotal after item discounts
-# - Apply best order-level discount
-# - Print final order cost
 
 
 n = int(input("Enter number of items: "))

@@ -1,4 +1,5 @@
-# simple code with sort method
+# Lab sheet 7: LO2
+# Problem Statement: Third-Place Finisher Using Basic Sorting
 
 # n = int(input())
 # times = list(map(int, input().split()))
